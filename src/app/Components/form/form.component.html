@@ -1,0 +1,11 @@
+<h2 class="form-title">Add Product</h2>
+<form (ngSubmit)="addProduct()" class="product-form">
+  <label for="name">Product Name:</label>
+  <input id="name" [(ngModel)]="product.name" name="name" required class="input-field"/>
+
+  <label class="checkbox-label">
+    <input type="checkbox" [(ngModel)]="product.available" name="available" /> Available
+  </label>
+
+  <button type="submit" class="submit-btn">Add Product</button>
+</form>

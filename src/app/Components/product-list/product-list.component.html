@@ -1,0 +1,23 @@
+<h2 class="title">Product List</h2>
+
+<ul class="product-list">
+  <li *ngFor="let product of products" class="product-item" [class.out-of-stock]="!product.available">
+    <div class="product-info">
+      <h3>{{ product.name }}</h3>
+      <p class="status">{{ product.available ? 'Available' : 'Out of Stock' }}</p>
+    </div>
+    <div class="product-actions">
+      <button class="btn btn-details" (click)="showProductDetails(product)">Details</button>
+      <button class="btn btn-edit" (click)="editProduct(product)">Edit</button>
+      <button class="btn btn-delete" (click)="deleteProduct(product.id)">Delete</button>
+    </div>
+  </li>
+</ul>
+
+<!-- Product Details Section -->
+<app-product-details 
+  *ngIf="selectedProduct" 
+  [product]="selectedProduct" 
+  (close)="hideProductDetails()" 
+  class="product-details-modal">
+</app-product-details>

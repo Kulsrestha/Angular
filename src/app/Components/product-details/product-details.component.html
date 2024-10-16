@@ -1,0 +1,6 @@
+<h2 class="details-title">Product Details</h2>
+<div class="product-details" *ngIf="product">
+  <p><strong>Name:</strong> {{ product.name }}</p>
+  <p><strong>Status:</strong> {{ product.available ? 'Available' : 'Out of Stock' }}</p>
+  <button class="close-btn" (click)="closeDetails()">Close</button>
+</div>

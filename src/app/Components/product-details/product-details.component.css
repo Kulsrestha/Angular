@@ -1,0 +1,38 @@
+/* General styling for product details */
+.details-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .product-details {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;  
+  }
+  
+  .product-details p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .close-btn {
+    background: #007bff; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+  }
+  
+  .close-btn:hover {
+    background: #0056b3;
+  }
+  
